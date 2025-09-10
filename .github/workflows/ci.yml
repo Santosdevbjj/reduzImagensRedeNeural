@@ -1,5 +1,6 @@
 name: CI
 
+# Aciona o workflow em push ou pull request para o branch main
 on:
   push:
     branches:
@@ -13,30 +14,35 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8, 3.9, 3.10]
+        python-version: [3.8, 3.9, 3.10, 3.11]  # versões compatíveis com Ubuntu 24.04
 
     steps:
+      # Passo 1: fazer checkout do repositório
       - uses: actions/checkout@v3
 
-      - name: Setup Python ${{ matrix.python-version }}
+      # Passo 2: configurar Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
+      # Passo 3: instalar dependências
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest pytest-cov codecov
 
+      # Passo 4: rodar testes com cobertura
       - name: Run tests with coverage
         run: |
           pytest --cov=src --cov-report=xml
 
+      # Passo 5: enviar cobertura para Codecov
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          token: ${{ secrets.CODECOV_TOKEN }}  # adicione seu token no GitHub Secrets
           files: coverage.xml
           fail_ci_if_error: true
           verbose: true

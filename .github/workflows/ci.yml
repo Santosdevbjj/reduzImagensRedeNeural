@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8, 3.9, 3.10, 3.11]  # versões compatíveis com Ubuntu 24.04
+        python-version: [3.11]  # versões compatíveis com Ubuntu 24.04
 
     steps:
       # Passo 1: fazer checkout do repositório

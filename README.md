@@ -3,13 +3,27 @@
 ![bairesDev](https://github.com/user-attachments/assets/f1bfd926-4bf3-4031-bab1-92aba768309e)
 
 
-**Bootcamp BairesDev - Machine Learning Training**
+**Bootcamp BairesDev - Machine Learning Training** - **Ministrado pela DIO**
 
 
 ---
 
 **DESCRIÇÃO:**
 Seguindo o exemplo do algoritmo de binarização apresentado em nossa última aula, realize a implementação em Python para transformar uma imagem colorida para níveis de cinza (0 a 255) e para binarizada (0 e 255), preto e branco.
+
+---
+**Imagem da Lena usada nos testes**
+    
+  **Imagem Colorida**
+<img width="370" height="400" alt="lena_color" src="https://github.com/user-attachments/assets/f4874ebf-5111-4c89-a1d3-f14e3dda681c" />
+
+
+**Imagem em tons de cinza**
+<img width="360" height="400" alt="lena_gray" src="https://github.com/user-attachments/assets/f59edef4-475e-4c39-941c-bfc5c459ff9a" />
+
+
+ **Imagem em preto e branco**
+<img width="360" height="409" alt="lena_binary" src="https://github.com/user-attachments/assets/535d7242-e7ca-4458-bd36-063c836e17c6" />
 
 
 ---

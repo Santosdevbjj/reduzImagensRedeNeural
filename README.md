@@ -34,6 +34,7 @@ Ideal como introdução ao pré-processamento de imagens para redes neurais.
 
 ##  Estrutura do Projeto
 
+<img width="1080" height="920" alt="Screenshot_20250910-184633" src="https://github.com/user-attachments/assets/93d93d50-f815-40df-aadc-9046a17731d8" />
 
 
 

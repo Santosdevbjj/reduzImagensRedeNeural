@@ -14,7 +14,7 @@ Seguindo o exemplo do algoritmo de binarização apresentado em nossa última au
 
 ---
 
-h<!-- badges: start -->
+<!-- badges: start -->
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/Santosdevbjj/reduzImagensRedeNeural/ci.yml?branch=main)](https://github.com/Santosdevbjj/reduzImagensRedeNeural/actions)
 [![Coverage](https://img.shields.io/codecov/c/github/Santosdevbjj/reduzImagensRedeNeural?branch=main)](https://codecov.io/gh/Santosdevbjj/reduzImagensRedeNeural)
